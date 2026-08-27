@@ -1,0 +1,71 @@
+# =========================================================================
+#  .gitignore  —  TFG Detección de objetos aéreos (app Flutter + backend Python)
+# =========================================================================
+
+# ----- SECRETOS (NUNCA subir) --------------------------------------------
+.env
+.env.*
+*.env
+**/secrets.*
+**/roboflow*.key
+**/api_key*
+config_local.*
+*.keystore
+*.jks
+key.properties
+
+# ----- Datasets y pesos pesados (no versionar) ---------------------------
+# El código debe descargarlos/entrenarlos; no se guardan en git.
+datasets/
+data/
+**/valid/
+**/train/
+**/test/
+*.pt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+# Si quieres versionar SOLO los .tflite de despliegue, comenta la línea siguiente:
+# *.tflite
+
+# ----- Flutter / Dart ----------------------------------------------------
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.packages
+app/build/
+app/.pub-cache/
+app/.pub/
+**/generated_plugin_registrant.*
+*.iml
+.idea/
+
+# ----- Android / Kotlin --------------------------------------------------
+app/android/.gradle/
+app/android/app/build/
+app/android/build/
+app/android/local.properties
+app/android/**/*.iml
+*.apk
+*.aab
+
+# ----- Python ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.sqlite
+*.db
+
+# ----- Sistema operativo / editor ----------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+
+**/local.properties
+**/contexto_sesion*.txt

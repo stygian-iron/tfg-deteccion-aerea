@@ -1,0 +1,27 @@
+# Entorno virtual
+venv/
+
+# Modelos entrenados (muy pesados para GitHub)
+models/*.pt
+models/*.onnx
+models/*.tflite
+
+# Dataset (se descarga desde Roboflow)
+dataset/images/
+dataset/labels/
+
+# Outputs generados
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# Variables de entorno
+.env
+*.env
